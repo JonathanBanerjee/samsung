@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samsung</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="“preload”" href="./SamsungSharpSansBd.woff" type="woff" />
   </head>
+
   <body>
     <header>
       <div class="logo">
@@ -26,9 +28,10 @@
           <img src="./user.svg" alt="User logo" />
         </div>
         <div class="menu">
-          <img src="./hamburger.svg" alt="Hamburger Menu" />
-          <section>
-            <ul>
+         <label for = "menu"> <img src="./hamburger.svg" alt="Hamburger Menu"> </img> </label>
+         <input type="checkbox" id="menu"></input>
+          <section id ="outmenu">
+            <ul id ="menulist">
               <li>Shop</li>
               <li>Mobile</li>
               <li>TV & AV</li>
@@ -59,80 +62,99 @@
     </header>
     <main>
       <section>
-        <div class="featured">
-          <h2>Product name goes here</h2>
-          <button>Buy Now</button>
-          <ul>
+        <div class="featured card">
+          <h2>Galaxy Z Fold5 | Z Flip5</h2>
+          <p>
+            Get 10% off with code SEVENDAYS, plus claim free Galaxy Buds2 Pro
+            and a Starter Kit when you buy now 1,2
+          </p>
+          <button id="buy">Buy Now</button>
+          <button id="learn">Learn more</button>
+          <!-- <ul>
             <li>Product 1</li>
             <li>Product 2</li>
             <li>Product 3</li>
             <li>Product 4</li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
       <section>
-        <div class="latest">
-          <h2>Latest Deals</h2>
-          <ul>
-            <li>New In</li>
-            <li>Mobile</li>
-            <li>TV & AV</li>
-            <li>Home Appliances</li>
-          </ul>
+        <div class="latest card multiselect">
+          <div>
+            <h2>Latest Deals</h2>
+            <ul>
+              <li>New In</li>
+              <li>Mobile</li>
+              <li>TV & AV</li>
+              <li>Home Appliances</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section>
-        <div class="mobile">
-          <h2>Mobile</h2>
-          <ul>
-            <li>Galaxy Z Fold 5</li>
-            <li>Galaxy Z Flip 5</li>
-            <li>Galaxy Unpacked Highlight</li>
-            <li>Galaxy Tab S9 Ultra</li>
-            <li>Galaxy Watch6 | Watch6 Classic</li>
-          </ul>
-          <h3>Product name goes here</h3>
-          <button>Buy Now</button>
-          <button>Learn more</button>
+        <div class="mobile card multiselect">
+          <div>
+            <h2>Mobile</h2>
+            <ul>
+              <li>Galaxy Z Fold 5</li>
+              <li>Galaxy Z Flip 5</li>
+              <li>Galaxy Unpacked Highlight</li>
+              <li>Galaxy Tab S9 Ultra</li>
+              <li>Galaxy Watch6 | Watch6 Classic</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Product name goes here</h3>
+            <button id="buy">Buy Now</button>
+            <button id="learn">Learn more</button>
+          </div>
         </div>
       </section>
 
       <section>
-        <div class="tvandav">
-          <h2>TV & AV</h2>
-          <ul>
-            <li>Neo QLED 8K</li>
-            <li>Neo QLED 4K</li>
-            <li>Samsung Oled</li>
-            <li>The Frame - Disney100 Edition</li>
-            <li>The Freestyle 2nd Gen.</li>
-          </ul>
-          <h3>Product name goes here</h3>
-          <button>Buy Now</button>
-          <button>Learn more</button>
+        <div class="tvandav card multiselect">
+          <div>
+            <h2>TV & AV</h2>
+            <ul>
+              <li>Neo QLED 8K</li>
+              <li>Neo QLED 4K</li>
+              <li>Samsung Oled</li>
+              <li>The Frame - Disney100 Edition</li>
+              <li>The Freestyle 2nd Gen.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Product name goes here</h3>
+            <button id="buy">Buy Now</button>
+            <button id="learn">Learn more</button>
+          </div>
         </div>
       </section>
 
       <section>
-        <div class="homeappliances">
-          <h2>Home Appliances</h2>
-          <ul>
-            <li>BESPOKE Jet&trade; AI</li>
-            <li>Pet Care</li>
-            <li>BESPOKE Refrigerators</li>
-            <li>Bespoke AI&trade; Laundry</li>
-            <li>Samsung JetBot&trade;</li>
-          </ul>
-          <h3>Product name goes here</h3>
-          <button>Buy Now</button>
-          <button>Learn more</button>
+        <div class="homeappliances card multiselect">
+          <div>
+            <h2>Home Appliances</h2>
+            <ul>
+              <li>BESPOKE Jet&trade; AI</li>
+              <li>Pet Care</li>
+              <li>BESPOKE Refrigerators</li>
+              <li>Bespoke AI&trade; Laundry</li>
+              <li>Samsung JetBot&trade;</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Product name goes here</h3>
+            <button id="buy">Buy Now</button>
+            <button id="learn">Learn more</button>
+          </div>
         </div>
       </section>
 
       <section>
-        <div class="recommendedproducts">
+        <div class="recommendedproducts card">
           <h2>Recommended Products</h2>
           <img src="" alt="Galaxy Z Flip5 (Online exclusive)" />
           <img src="" alt="Galaxy Z Flip5" />
@@ -140,20 +162,20 @@
       </section>
 
       <section>
-        <div class="worldexpo">
+        <div class="worldexpo card">
           <button>Watch Video</button>
         </div>
       </section>
 
       <section>
-        <div class="explore">
+        <div class="explore card">
           <img src="" alt="Barbie Image" />
-          <button>Learn more</button>
+          <button id="learn">Learn more</button>
         </div>
       </section>
 
       <section>
-        <div class="search">
+        <div class="search card">
           <h2>Looking for something else?</h2>
           <input type="text" placeholder="Search Keyword" />
           <button>Galaxy Z Flip5</button>
@@ -327,7 +349,7 @@
       </section>
 
       <section>
-        <div class="bottom-menu">
+        <div class="bottom-menu card">
           <ul>
             <li>Product & Service</li>
             <li>Shop</li>
@@ -346,7 +368,7 @@
           <p bold>United Kingdom/English</p>
           <img
             id="hermajesty"
-            src=""
+            src="./images/download-2.webp"
             alt=" HMRC Logo for electronic products"
           />
         </div>

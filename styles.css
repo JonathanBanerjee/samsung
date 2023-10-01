@@ -20,10 +20,12 @@ nav > div {
   width: 100%;
   height: 100vh;
   background-color: #0000;
-  /* transition: opacity 1s; */
+  position: fixed;
+  transition: background-color 1s ease-in-out;
 }
 
 .menu #menulist {
+  /* PUT FONTS AND MARGINS HERE */
   width: 80%;
   position: relative;
   background-color: white;
@@ -31,23 +33,27 @@ nav > div {
   list-style-type: none;
   left: 100%;
   overflow: hidden;
-  transition: left 1s;
+  transition: left 1s ease-in-out;
 }
 
+/* Checkbox hack, the tilde is an adjecent selector
+class menu, id menu when checked, look for the  sibling section with the id of outmenu 
+ (You are targetting the tilde.
+ This is the background which makes it opaque  */
 .menu #menu:checked ~ section#outmenu {
   display: inherit;
-  position: fixed;
   top: 0;
   left: 0;
-  transition: background-color 1s;
+  transition: background-color 1s ease-in-out;
   background-color: #0008;
 }
 
+/* This is the menu that appears on screen*/
 .menu #menu:checked ~ section#outmenu #menulist {
   width: 80%;
   overflow: hidden;
   left: 20%;
-  transition: left 1s;
+  transition: left 1s ease-in-out;
 }
 
 #menu {
@@ -92,6 +98,11 @@ h2 {
 
 #learn:hover {
   text-decoration: underline;
+}
+
+#menulist li {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card {

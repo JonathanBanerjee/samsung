@@ -2,8 +2,14 @@
   font-family: SamReg;
   src: url(./SamsungSharpSansBd.woff) format("woff");
   font-weight: 400;
-  /* font-style: normal; */
-  /* font-display: fallback; */
+}
+
+@font-face {
+  font-family: SamOne;
+  src: url(./SamsungOne.woff2) format("woff2");
+  font-size: 16px;
+  line-height: 44px;
+  font-weight: normal;
 }
 
 nav {
@@ -26,6 +32,8 @@ nav > div {
 
 .menu #menulist {
   /* PUT FONTS AND MARGINS HERE */
+  font-family: SamOne;
+  padding: 0px 48px 0px 24px;
   width: 80%;
   position: relative;
   background-color: white;
@@ -102,7 +110,7 @@ h2 {
 
 #menulist li {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: sp;
 }
 
 .card {
@@ -141,11 +149,11 @@ h2 {
 }
 
 .tvandav {
-  background-image: url(./images/download.webp);
+  background-image: url(./images/neoqled8k.jpg);
 }
 
 .homeappliances {
-  background-image: url();
+  background-image: url(./images/JetAI.avif);
 }
 
 .recommendedproducts {
@@ -153,9 +161,35 @@ h2 {
 }
 
 .worldexpo {
-  background-image: url();
+  background-image: url(./images/worldexpo.avif);
 }
 
 .disclaimer {
   padding: 2%;
+}
+
+.search button {
+  height: 8.33333333vw;
+  padding: 2.222222222vw 4.44444444444vw;
+  font-size: 2.77777777778vw;
+  background-color: white;
+  border: solid 1px rgba(0, 0, 0, 0, 0.15);
+  color: #000;
+  font-family: SamOne;
+  line-height: 1.33;
+  white-space: nowrap;
+  border-radius: 20px;
+}
+
+.search button:hover {
+  height: 8.33333333vw;
+  padding: 2.222222222vw 4.44444444444vw;
+  font-size: 2.77777777778vw;
+  background-color: rgba (255, 255, 0, 3);
+  border: solid 1px rgba(0, 0, 0, 0, 0.15);
+  color: #000;
+  font-family: SamOne;
+  line-height: 1.33;
+  white-space: nowrap;
+  border-radius: 20px;
 }
